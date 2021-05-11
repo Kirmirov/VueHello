@@ -15,12 +15,12 @@ export default {
 }
 </script>
 
-<style scoped>
-    p {
-        color: red
-    }
+<style lang="scss" scoped>
     .message{
         text-align: center;
         padding: 20px;
+        p {
+            color: red
+        }
     }
 </style>

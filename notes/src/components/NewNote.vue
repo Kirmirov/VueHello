@@ -24,9 +24,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .new-note{
         text-align: center;
-
     }
 </style>
