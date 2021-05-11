@@ -20,12 +20,15 @@ export default {
         addNote(){
             this.$emit('addNote', this.note) //Название, То что передаем
         }
-    }
+    },
 }
 </script>
 
 <style lang="scss" scoped>
     .new-note{
         text-align: center;
+    }
+    .btn {
+        margin-bottom: 30px;
     }
 </style>
