@@ -14,7 +14,7 @@
         </div>
 
         <label>Description</label>
-        <textarea v-model="note.descr"></textarea>
+        <textarea v-model="note.descr" placeholder="Write your task"></textarea>
         <button class="btn btnPrimary" @click="addNote">Add new note</button>
     </div>
 </template>

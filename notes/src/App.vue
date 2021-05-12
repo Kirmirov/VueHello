@@ -50,24 +50,24 @@ export default {
         rank: 'simple'
       },
       notes: [
-        {
-          title: 'First Note',
-          descr: 'Description for first note',
-          rank: 'simple',
-          date: new Date(Date.now()).toLocaleString()
-        },
-        {
-          title: 'Second Note',
-          descr: 'Description for second note',
-          rank: 'medium',
-          date: new Date(Date.now()).toLocaleString()
-        },
-        {
-          title: 'Third Note',
-          descr: 'Description for third note',
-          rank: 'important',
-          date: new Date(Date.now()).toLocaleString()
-        },
+        // {
+        //   title: 'First Note',
+        //   descr: 'Description for first note',
+        //   rank: 'simple',
+        //   date: new Date(Date.now()).toLocaleString()
+        // },
+        // {
+        //   title: 'Second Note',
+        //   descr: 'Description for second note',
+        //   rank: 'medium',
+        //   date: new Date(Date.now()).toLocaleString()
+        // },
+        // {
+        //   title: 'Third Note',
+        //   descr: 'Description for third note',
+        //   rank: 'important',
+        //   date: new Date(Date.now()).toLocaleString()
+        // },
       ]
     }
   },
