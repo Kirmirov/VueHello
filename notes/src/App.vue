@@ -46,22 +46,26 @@ export default {
       grid: true,
       note: {
         title: '',
-        descr: ''
+        descr: '',
+        rank: 'simple'
       },
       notes: [
         {
           title: 'First Note',
           descr: 'Description for first note',
+          rank: 'simple',
           date: new Date(Date.now()).toLocaleString()
         },
         {
           title: 'Second Note',
           descr: 'Description for second note',
+          rank: 'medium',
           date: new Date(Date.now()).toLocaleString()
         },
         {
           title: 'Third Note',
           descr: 'Description for third note',
+          rank: 'important',
           date: new Date(Date.now()).toLocaleString()
         },
       ]
@@ -79,7 +83,7 @@ export default {
   },
   methods: {
     addNote(){
-      let {title, descr} = this.note
+      let {title, descr, rank} = this.note
       if(!title) {
         this.message = "Error! Title can't be empty!"
         return false
@@ -87,10 +91,12 @@ export default {
       this.notes.push({
         title,
         descr,
+        rank,
         date: new Date(Date.now()).toLocaleString()
       })
       this.note.title = ''
       this.note.descr = ''
+      this.note.rank = 'simple'
       this.message = null
     },
     removeNote(index){

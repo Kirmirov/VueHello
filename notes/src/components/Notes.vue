@@ -2,7 +2,7 @@
     <div class="notes">
         <div class="note" :class="{ full:!grid }" v-for="(note, index) in notes" :key="index">
             <div class="note-header" :class="{ full:!grid }">
-                <p>{{ note.title }}</p>
+                <p :class="note.rank">{{ note.title }}</p>
                 <p style="cursor: pointer" @click="removeNote(index)">х</p>
             </div>
             <div class="note-body">
@@ -61,8 +61,14 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        p {
-            color: rgb(40, 72, 214)
+        .simple {
+            color: rgb(52, 214, 31)
+        }
+        .medium{
+            color: rgba(27, 29, 196, 0.904)
+        }
+        .important{
+            color: rgb(214, 40, 40)
         }
     }
 
