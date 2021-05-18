@@ -1,17 +1,18 @@
 <template>
   <transition name="modal">
     <div class="modal__wrapper" @click="$emit('close')">
-      <div class="modal-content" @click.stop="">
+      <div class="modal-content" @click.stop=""> <!-- запрет отработки клика -->
         <div class="modal-header">
           <span class="modal-title"> {{ title }} </span>
           <span class="button-close" @click="$emit('close')">×</span>
         </div>
         <div class="modal-body">
-          <slot name="body">default body</slot>
+          <slot name="body">default body</slot> <!-- slot позволяет вставить элементы в компоненту через главную компоненту -->
         </div>
       </div>
     </div>
   </transition>
+  <!--  -->
 </template>
 
 <script>
